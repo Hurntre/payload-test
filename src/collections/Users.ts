@@ -9,6 +9,12 @@ const Users: CollectionConfig = {
   fields: [
     // Email added by default
     // Add more fields as needed
+    {
+        name: 'avatar',
+        label: 'Avatar',
+        type: 'upload',
+        relationTo: 'media',
+    }
   ],
 }
 
