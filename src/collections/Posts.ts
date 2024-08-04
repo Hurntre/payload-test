@@ -16,6 +16,19 @@ const Posts: CollectionConfig = {
         type: 'richText',
         required: true,
     },
+    // {
+    //     name: 'category',
+    //     label: 'Post Type',
+    //     type: 'text',
+    //     required: true,
+    // },
+    {
+        name: 'category',
+        label: 'Post Type',
+        type: 'select',
+        options: ['News', 'Events', 'Announcements', 'AI', 'Finance', 'Politics', 'General', 'Featured Post', 'Mentoring'],
+        required: true,
+    },
     {
         name: 'image',
         label: 'Hero Image',
